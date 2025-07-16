@@ -122,3 +122,40 @@
   }
 }
 
+.project-image {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.project-image:hover {
+  transform: scale(1.02);
+}
+
+.project-image::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -75%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    rgba(6, 226, 197, 0.301) 30%,
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(5, 83, 228, 0.233) 70%
+  );
+  transform: rotate(25deg);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.6s ease-in-out;
+}
+
+.project-image:hover::before {
+  top: 100%;
+  left: 100%;
+  opacity: 1;
+}
+
