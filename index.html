@@ -10,6 +10,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css">
+  
  </head>
  <body>
   <header class="p-6 flex justify-between items-center sticky-header">
@@ -97,7 +98,7 @@
      I am a passionate computer science student currently pursuing my B.Tech at JB Institute of Technology (2022-2026). I have a strong interest in web development, especially in frontend technologies, where I love crafting visually appealing and interactive user experiences.
     </p>
     <div class="resume-box">
-  <a href="resumetyagi.pdf" class="resume-btn" download>Download Resume</a>
+  <a href="adhartyagi resume.docx" class="resume-btn" download>Download Resume</a>
 </div>
    </div>
    
@@ -106,6 +107,15 @@
     <img alt="3D animated avatar of Adhar Tyagi" class="rounded-full" height="650" src="https://i.postimg.cc/pdTzsP4Q/SAVE-20240312-155824-removebg-preview-pica.png" width="650"/>
    </div>
   </section>
+  <div class="marquee-container">
+  <div class="marquee">
+    <span>    •  UI/UX Developer  •  Frontend Developer  •  Product Design  •  Social Media Post •  Branding •  UI/UX Developer  •  Frontend Developer  •  Product Design  •  Social Media Post •  Branding
+       •  UI/UX Developer  •  Frontend Developer  •  Product Design  •  Social Media Post •  Branding •  UI/UX Developer  •  Frontend Developer  •  Product Design  •  Social Media Post •  Branding
+        •  UI/UX Developer  •  Frontend Developer  •  Product Design  •  Social Media Post •  Branding •  UI/UX Developer  •  Frontend Developer  •  Product Design  •  Social Media Post •  Branding
+</span>
+  </div>
+</div>
+
 
   
   <section class="flex flex-col md:flex-row items-start justify-center p-6 section pt-24" id="biography">
@@ -381,47 +391,6 @@ As I continue studying, I eagerly anticipate opportunities to integrate my techn
     © 2025 Adhar Tyagi. All rights reserved.
    </p>
   </footer>
-  <script>
-    
-   document.addEventListener('DOMContentLoaded', function() {
-            const sections = document.querySelectorAll('.section');
-            const options = {
-                threshold: 0.1
-            };
-
-            const menuButton = document.getElementById('menu-button');
-  const mobileMenu = document.getElementById('mobile-menu');
-
-  menuButton.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-  });
-
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('active');
-                    } else {
-                        entry.target.classList.remove('active');
-                    }
-                });
-            }, options);
-
-            sections.forEach(section => {
-                observer.observe(section);
-            });
-
-            document.querySelectorAll('a.nav-link').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href').substring(1);
-                    const targetSection = document.getElementById(targetId);
-
-                    targetSection.scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                });
-            });
-        });
-  </script>
+  <script src="script.js"></script>
  </body>
-</
+ </html>
