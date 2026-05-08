@@ -1,370 +1,604 @@
+<!doctype html>
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
-   Adhar Tyagi - Portfolio
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="style.css">
-  
- </head>
- <body>
-  <header class="fixed top-0 w-full z-50 bg-black p-6 flex justify-between items-center">
-   <div class="text-center">
-    <h1 class="text-4xl animated-heading">
-     Adhar Tyagi
-    </h1>
-   </div>
-   <nav>
-    <div class="md:hidden">
-        <button id="menu-button" class="text-gray-800 focus:outline-none">
-          <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2"
-            viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
-      </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adhar Tyagi — Frontend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+    <div class="grid-bg"></div>
 
-      <!-- Desktop Menu -->
-      <div class="hidden md:flex space-x-4">
-        <a href="#home" class="text-white-800 hover:text-blue-500">Home</a>
-        <a href="#biography" class="text-white-800 hover:text-blue-500">Biography</a>
-        <a href="#skills" class="text-white-800 hover:text-blue-500">Skills</a>
-        <a href="#certifications" class="text-white-800 hover:text-blue-500">Certifications</a>
-        <a href="#projects" class="text-white-800 hover:text-blue-500">Projects</a>
-        <a href="#contact" class="text-white-800 hover:text-blue-500">Contact</a>
-      </div>
-    
-
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden md:hidden px-4 pb-4">
-    <a href="#home" class="block py-2 text-white-800 hover:text-blue-500">Home</a>
-    <a href="#biography" class="block py-2 text-white-800 hover:text-blue-500">Biography</a>
-    <a href="#skills" class="block py-2 text-white-800 hover:text-blue-500">Skills</a>
-    <a href="#certifications" class="block py-2 text-white-800 hover:text-blue-500">Certifications</a>
-    <a href="#projects" class="block py-2 text-white-800 hover:text-blue-500">Projects</a>
-    <a href="#contact" class="block py-2 text-white-800 hover:text-blue-500">Contact</a>
-  </div>
-
-  </header>
-  <section class="flex flex-col md:flex-row items-center justify-center min-h-[80vh] p-6 pt-20" id="home">
-    
-
-   <div class="text-center md:text-left md:w-1/2">
-    <h2 class="text-3xl mb-2 animated-heading">
-     INTRODUCTION
-    </h2>
-    <p class="text-[65px] font-bold mb-4 leading-none animated-text">
-     I'm Adhar, a Frontend Developer
-    </p>
-    <p class="text-lg mb-4">
-I am a passionate computer science student currently pursuing my B.Tech at JB Institute of Technology (2022-2026). I have a strong interest in web development, especially in frontend technologies, where I love crafting visually appealing and interactive user experiences.<div class="buttons">
-    <a href="#projects" class="btn">View Projects</a>
-    <a href="Adhar tyagi Resume.docx" class="btn btn-outline">Download Resume</a>
-</div>
-   </div>
-
-   <div class="hero-image">
-    <img src="https://i.postimg.cc/pdTzsP4Q/SAVE-20240312-155824-removebg-preview-pica.png" alt="Adhar Tyagi">
-</div>
-  </section>
-  <div class="marquee-container">
-  <div class="marquee">
-    <span>    •  UI/UX Developer  •  Frontend Developer  •  Product Design  •  Social Media Post •  Branding •  UI/UX Developer  •  Frontend Developer  •  Product Design  •  Social Media Post •  Branding
-       •  UI/UX Developer  •  Frontend Developer  •  Product Design  •  Social Media Post •  Branding •  UI/UX Developer  •  Frontend Developer  •  Product Design  •  Social Media Post •  Branding
-        •  UI/UX Developer  •  Frontend Developer  •  Product Design  •  Social Media Post •  Branding •  UI/UX Developer  •  Frontend Developer  •  Product Design  •  Social Media Post •  Branding
-</span>
-  </div>
-</div>
-
-
-  
-  <section class="flex flex-col md:flex-row items-start justify-center p-6 section pt-24" id="biography">
-   <div class="md:w-1/3 flex flex-col items-center sticky-photo">
-
-    <img src="https://i.postimg.cc/c4DX59gr/DP-removebg-preview.png" alt="Adhar Tyagi" class="rounded-full" width="276" height="276" />
-    <div class="flex justify-center space-x-4 mt-4">
-     <a class="text-2xl" href="https://www.linkedin.com/in/adhar-tyagi-2847b325b">
-      <i class="fab fa-linkedin">
-      </i>
-     </a>
-     <a class="text-2xl" href="https://github.com/ADHAR546">
-      <i class="fab fa-github">
-      </i>
-     </a>
-     <a class="text-2xl" href="https://www.instagram.com/_.tyagi07/">
-      <i class="fab fa-instagram">
-      </i>
-     </a>
-     <a class="text-2xl" href="https://wa.me/8171034485?text=Hi%20Adhar%2C%20I%20visited%20your%20portfolio!">
-      <i class="fab fa-whatsapp">
-      </i>
-     </a>
+    <!-- Social Sidebar -->
+    <div class="social-sidebar">
+      <a
+        class="soc-link"
+        href="https://www.linkedin.com/in/adhar-tyagi-2847b325b"
+        target="_blank"
+        title="LinkedIn"
+        >in</a
+      >
+      <a
+        class="soc-link"
+        href="https://github.com/ADHAR546"
+        target="_blank"
+        title="GitHub"
+        >gh</a
+      >
+      <a
+        class="soc-link"
+        href="https://www.instagram.com/_.tyagi07/"
+        target="_blank"
+        title="Instagram"
+        >ig</a
+      >
+      <a
+        class="soc-link"
+        href="https://wa.me/8171034485"
+        target="_blank"
+        title="WhatsApp"
+        >wa</a
+      >
     </div>
-   </div>
-   <div class="md:w-2/3 p-6">
-    <h2 class="text-3xl mb-4 animated-heading">
-    👨‍💻 Biography 
-    </h2>
-    <p class="text-lg mb-4">
-I am Adhar Tyagi, a student pursuing my B.Tech from JB Institute of Technology (2022-2026). I have always been interested in web development and frontend development. My path into the world of technology started with loving the art of designing user-friendly and visually appealing user interfaces, which compelled me to become proficient in HTML, CSS, JavaScript, C, C++, and Python.    </p>
-    <p class="text-lg mb-4">
-I love creating engaging and interactive websites with a combination of form and function. Whether testing UI/UX concepts, fine-tuning performance, or exploring new web frameworks, I always relish the opportunity to learn and get better.    </p>
-    <p class="text-lg mb-4">
-As I continue studying, I eagerly anticipate opportunities to integrate my technical skills and innovative thinking into actual projects. The constantly changing web technology field fascinates me, and I am eager to leave my mark within it.    </p>
-    <h2 class="text-3xl mb-4 animated-heading" id="education">
-   🎓 Education 
-    </h2>
-    <ul class="list-disc list-inside mb-4">
-     <li>
-      College: JB Institute of Technology (Pursuing B.Tech 2022-2026)
-     </li>
-     <li>
-      Schooling: 12th (CBSE Board) &amp; 10th (UP Board)
-     </li>
-    </ul>
-    <h2 class="text-3xl mb-4 animated-heading" id="skills">
-    🛠️ Skills 
-    </h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
-     <div class="p-4 rounded-lg text-center">
-      <img alt="3D laptop icon representing frontend development" class="project-image mx-auto mb-2" height="50" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuQQYxvrf86_MIrdbah6Rv18WxGmxQMvQRaw&" width="50"/>
-      <h3 class="text-2xl mb-2">
-       Frontend Developer
-      </h3>
-      <p>
-       HTML, CSS, JavaScript
-      </p>
-     </div>
-     <div class="p-4 rounded-lg text-center">
-      <img alt="3D icon representing programming languages with angle brackets" class="project-image mx-auto mb-2" height="50" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxkcWDD5ZBp2006yu0HN4l67niOVRVLzDmEQ&s" width="50"/>
-      <h3 class="text-2xl mb-2">
-       Programming Languages
-      </h3>
-      <p>
-       C, C++, Python
-      </p>
-     </div>
-     <div class="p-4 rounded-lg text-center">
-      <img alt="3D icon representing WordPress with WP logo" class="project-image mx-auto mb-2" height="50" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiQqvP9mSAN_KNxZlbvD9VT-yl4Vf_PuT6Cw&s" width="50"/>
-      <h3 class="text-2xl mb-2">
-       WordPress
-      </h3>
-      <p>
-       Full Website Creator
-      </p>
-     </div>
-     <div class="p-4 rounded-lg text-center">
-      <img alt="3D icon representing WordPress with WP logo" class="project-image mx-auto mb-2" height="60" src="https://blog.greggant.com/images/posts/2019-04-25-figma/Figma.png" width="60"/>
-      <h3 class="text-2xl mb-2">
-       Figma 
-      </h3>
-      <p>
-       UI & UX Design 
-      </p>
-     </div>
-    </div>
-    <h2 class="text-3xl mb-4 animated-heading" id="certifications">
-     🏅 Certifications 
-    </h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-     <div class="p-4 rounded-lg text-center">
-      <img alt="LetsUpgrade Graphic Designing Bootcamp logo" class="project-image mx-auto mb-2" height="100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKWVfJcNJwG2d_7cXpNshmNLqfWE6hsuXfkg&s" width="100"/>
-      <p>
-       LetsUpgrade: Graphic Designing Bootcamp, Canva Bootcamp
-      </p>
-     </div>
-     <div class="p-4 rounded-lg text-center">
-      <img alt="NPTEL Foundation of Cloud, IoT, Edge, ML logo" class="project-image mx-auto mb-2" height="100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8VRmuwZhG40QDxM_IF9klXkzNA96GmX1z2Q&s" width="100"/>
-      <p>
-       NPTEL: Foundation of Cloud IoT Edge ML
-      </p>
-     </div>
-     <div class="p-4 rounded-lg text-center">
-      <img alt="JBIT Hackathon, Digital Marketing, Python Programming logo" class="project-image mx-auto mb-2" height="100" src="https://www.jbitdoon.com/images/jbit-naac-accredition-2024.jpg" width="100"/>
-      <p>
-       JBIT: Digital Marketing, Python Programming, Sensors network and cloud an IOT Workshop
-      </p>
-     </div>
-     <div class="p-4 rounded-lg text-center">
-      <img alt="IITronixSolution C++, C, Artificial Intelligence logo" class="project-image mx-auto mb-2" height="100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNH0ukpFtOZ8o9FwfoddSIZJVdL0D2k5vAhw&s" width="100"/>
-      <p>
-       IITronixSolution: C++, C, Artificial Intelligence
-      </p>
-     </div>
-     <div class="p-4 rounded-lg text-center">
-      <img alt="YHILLS Web Development logo" class="project-image mx-auto mb-2" height="100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnXdv3doT7kagExMJbN_AmDBDW64WL4xrOgQ&s" width="100"/>
-      <p>
-       YHILLS: Web Development
-      </p>
-     </div>
-     <div class="p-4 rounded-lg text-center">
-      <img alt="Spoken Tutorial Project at IIT Bombay" class="project-image mx-auto mb-2" height="100" src="https://avatars.githubusercontent.com/u/6771202?s=200&v=4" width="100"/>
-      <p>
-       Spoken Python 3.4.3 Training
-      </p>
-     </div>
-     <div class="p-4 rounded-lg text-center">
-      <img alt="Vervegen Tech Pvt Lmt" class="project-image mx-auto mb-2" height="150" src="https://i.postimg.cc/KYGwgkMM/vervegen-logo.png" width="150"/>
-      <p>
-       Mern Stack Development
-      </p>
-     </div>
-    </div>
-    <h2 class="text-3xl mb-4 animated-heading" id="Achivement">
-    🏆 Achivement 
-    </h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-     <div class="p-4 rounded-lg text-center">
-      <img alt="Hackathon " class="project-image mx-auto mb-2" height="100" src="https://www.jbitdoon.com/images/jbit-naac-accredition-2024.jpg" width="100"/>
-      <p>
-       JBIT: Hackathon [Applied technical skills to solve real-world problems]
-      </p>
-     </div>
-   </div>
-  </section>
-  <section class="p-6 section pt-24" id="projects">
-   <div class="p-6 rounded-lg">
-    <h2 class="text-3xl mb-4 animated-heading">
-    🚀 Projects &amp; Work 
-    </h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-     <div class="project-image p-4 rounded-lg text-center">
-      <img alt="Screenshot of Project 1" class="mx-auto mb-2" height="500" src="https://i.pinimg.com/736x/32/58/3b/32583bc980318d3ebd61c1249dfb5bef.jpg" width="350"/>
-      <h3 class="text-2xl mb-2">
-       JamAware 🚦
-      </h3>
-      <p>
-       Focused on traffic jams and real-time road conditions ( ⏳ Working on it )
-      </p>
-     </div>
-     <div class="project-image  p-4 rounded-lg text-center">
-        <a href="https://snake-game-adhar-tyagi.vercel.app/" target="_blank" >
-            <img alt="Screenshot of Project 2" class="mx-auto mb-2" height="200" src="https://www.pygame.org/thumb/dc96bf1f0848cde4419b05beaccf5c97.jpg" width="280"/>
-        </a>
-      <h3 class="text-2xl mb-2">
-       Snake Game 🚀
-      </h3>
-     </div>
-     <div class="project-image p-4 rounded-lg text-center">
-      <img alt="Screenshot of Project 3" class="mx-auto mb-2" height="300" src="https://i.postimg.cc/6QYzQjJc/designarch.jpg" width="450"/>
-      <h3 class="text-2xl mb-2">
-       DesignArch
-      </h3>
-      <p>
-       Architecture designing website ( ⏳ Working on beckend)
-      </p>
-     </div>
-      <div class="project-image p-4 rounded-lg text-center">
-        <a href="https://calculater-adhar-tyagi.vercel.app/" target="_blank" >
-            <img alt="Screenshot of Project 4" class="mx-auto mb-2" height="200" src="https://i.postimg.cc/0jfPR8Ry/calculatorlogo.jpg" width="280"/>
-        </a>
-      <h3 class="text-2xl mb-2">
-       Calculater 🚀
-      </h3>
-     </div>
-     <div class="project-image p-4 rounded-lg text-center">
-        <a href="https://bucket-game-fallling-stars-adhar-tyagi.vercel.app/" target="_blank" >
-            <img alt="Screenshot of Project 5" class="mx-auto mb-2" height="200" src="https://i.postimg.cc/dQ9WC7Jx/Screenshot-2025-05-25-234747.png" width="300"/>
-        </a>
-      <h3 class="text-2xl mb-2">
-        Bucket Falling Stars Game 🚀
-      </h3>
-     </div>
-     <div class="project-image p-4 rounded-lg text-center">
-        <a href="https://github.com/ADHAR546/mouse-cursor-follow-finger-" target="_blank" >
-            <img alt="Screenshot of Project 6" class="mx-auto mb-2" height="200" src="https://i.postimg.cc/NjZCj1P1/Screenshot-2025-05-26-173735.png" width="300"/>
-        </a>
-      <h3 class="text-2xl mb-2">
-       Virtual Mouse Using Python 🚀
-      </h3>
-     </div>
-     <div class="project-image p-4 rounded-lg text-center">
-        <a href="https://github.com/ADHAR546/volume-control-hand" target="_blank" >
-            <img alt="Screenshot of Project 6" class="mx-auto mb-2" height="200" src="https://i.postimg.cc/hj0t9RjX/Screenshot-2025-05-26-175806.png" width="300"/>
-        </a>
-      <h3 class="text-2xl mb-2">
-       Virtual volume control hand 🚀
-      </h3>
-     </div>
-     <div class="project-image p-4 rounded-lg text-center">
-        <a href="https://matamandirstore.vercel.app/" target="_blank" >
-            <img alt="Screenshot of Project 6" class="mx-auto mb-2" height="400" src="https://i.postimg.cc/fLJ6bQdY/Screenshot-2026-04-13-174406.png" width="300"/>
-        </a>
-      <h3 class="text-2xl mb-2">
-       Mata Mandir E-Commerce Website 🚀
-      </h3>
-     </div>
-    </div>
-   </div>
-  </section>
-  
-  <section class="p-6 section pt-24" id="contact">
-   <div class="flex flex-col md:flex-row items-start justify-center p-6">
-    <div class="md:w-1/2 p-6">
-     <h2 class="text-3xl mb-4 animated-heading">
-      📞 Contact Me
-     </h2>
-     <form action="https://formspree.io/f/xkgranrq" method="post" class="space-y-4" onsubmit="alert('Message sent! I will contact you soon.');">
-        <div>
-       <label class="block text-lg" for="name">
-        Name
-       </label>
-       <input class="w-full p-2 rounded-lg bg-gray-800 text-white" id="name" type="text"/>
-      </div>
+
+    <!-- NAV -->
+    <nav>
+      <a class="nav-logo" href="#hero">&lt;<span>Adhar Tyagi</span> /&gt;</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certs">Certifications</a></li>
+        <li><a href="#contact-section">Contact</a></li>
+      </ul>
+      <a
+        class="btn btn-primary"
+        href="https://portfolio-adhar-tyagi.vercel.app/Adhar tyagi Resume.docx"
+        style="padding: 10px 20px; font-size: 0.75rem"
+        >⬇ Resume</a
+      >
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-glow"></div>
       <div>
-       <label class="block text-lg" for="email">
-        Email
-       </label>
-       <input class="w-full p-2 rounded-lg bg-gray-800 text-white" id="email" type="email"/>
-      </div>
-      <div>
-       <label class="block text-lg" for="message">
-        Message
-       </label>
-       <textarea class="w-full p-2 rounded-lg bg-gray-800 text-white" id="message"></textarea>
-      </div>
-      <button class="w-full p-2 rounded-lg bg-green-500 text-white" type="submit">
-       Send Message
-      </button>
-     </form>
-      
+        <div class="hero-tag fade-up">
+          <span class="num">00.</span> Hello, World!
+        </div>
+        <h1 class="hero-name fade-up">
+          Adhar
+          <span class="accent-line">Tyagi</span>
+        </h1>
+        <p class="hero-desc fade-up">
+          <strong>Frontend Developer & UI/UX Designer</strong> — crafting
+          pixel-perfect, interactive web experiences. B.Tech CS student at JB
+          Institute of Technology.<span class="cursor-blink"></span>
+        </p>
+        <div class="hero-btns fade-up">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-outline" href="#contact-section">Let's Talk →</a>
+        </div>
 
-    </div>
-    <div class="md:w-1/2 p-6">
-     <h2 class="text-3xl mb-4 animated-heading">
-      Let's Connect!
-     </h2>
-     <p class="text-lg mb-2">
-      <strong>
-       Phone 📞:
-      </strong>
-      8171034485, 9149044051
-     </p>
-     <p class="text-lg mb-2">
-      <strong>
-       Email ✉️:
-      </strong>
-      adhartyagi1234@gmail.com
-     </p>
-     <p class="text-lg mb-2">
-      <strong>
-       Address 📍:
-      </strong>
-      dehradun, Uttrakhand, India
-     </p>
-    </div>
-   </div>
-  </section>
-  <footer class="p-6 text-center">
-   <p>
-    © 2025 Adhar Tyagi. All rights reserved.
-   </p>
-  </footer>
-  <script src="script.js"></script>
- </body>
- </html>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-num">8+</div>
+            <div class="stat-label">Projects Done</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">4</div>
+            <div class="stat-label">Skills Area</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">6+</div>
+            <div class="stat-label">Certifications</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-hint">SCROLL</div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="section-tag"><span class="num">01.</span> About Me</div>
+      <h2 class="section-title">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm <strong>Adhar Tyagi</strong>, a passionate Computer Science
+            student pursuing B.Tech from JB Institute of Technology (2022–2026),
+            based in Dehradun, Uttarakhand.
+          </p>
+          <p>
+            My journey into tech started with a love for creating
+            <strong>visually stunning and user-friendly interfaces</strong>. I
+            specialize in frontend development, UI/UX design, and Python-powered
+            projects.
+          </p>
+          <p>
+            When I'm not writing code, I'm designing in Figma, exploring new
+            frameworks, or building games just for fun.
+          </p>
+          <div class="about-info">
+            <div class="info-row">
+              <span class="info-key">Name</span
+              ><span class="info-val">Adhar Tyagi</span>
+            </div>
+            <div class="info-row">
+              <span class="info-key">College</span
+              ><span class="info-val">JB Institute of Technology</span>
+            </div>
+            <div class="info-row">
+              <span class="info-key">Year</span
+              ><span class="info-val">B.Tech 2022–2026</span>
+            </div>
+            <!--             <div class="info-row">
+              <span class="info-key">Location</span
+              ><span class="info-val">Dehradun, Uttarakhand</span>
+            </div>
+            <div class="info-row">
+              <span class="info-key">Email</span
+              ><span class="info-val">adhartyagi1234@gmail.com</span>
+            </div>
+            <div class="info-row">
+              <span class="info-key">Phone</span
+              ><span class="info-val">8171034485</span>
+            </div> -->
+          </div>
+        </div>
+        <div class="about-photo-wrap">
+          <img
+            class="about-photo"
+            src="https://i.postimg.cc/c4DX59gr/DP-removebg-preview.png"
+            alt="Adhar Tyagi"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="section-tag"><span class="num">02.</span> Capabilities</div>
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <span class="skill-icon">🌐</span>
+          <div class="skill-name">Frontend Development</div>
+          <p style="font-size: 0.85rem; color: var(--muted); line-height: 1.6">
+            Building interactive, responsive web interfaces with modern HTML,
+            CSS & JavaScript.
+          </p>
+          <div class="skill-tags">
+            <span class="tag">React JS</span>
+            <span class="tag">TailwindCss</span>
+            <span class="tag">HTML5</span><span class="tag">CSS3</span
+            ><span class="tag">JavaScript</span>
+          </div>
+        </div>
+        <!--  <div class="skill-card">
+          <span class="skill-icon">💻</span>
+          <div class="skill-name">Programming Languages</div>
+          <p style="font-size: 0.85rem; color: var(--muted); line-height: 1.6">
+            Core programming fundamentals with multi-language proficiency.
+          </p>
+          <div class="skill-tags">
+            <span class="tag">C</span><span class="tag">C++</span
+            ><span class="tag">Python</span>
+          </div>
+        </div> -->
+        <div class="skill-card">
+          <span class="skill-icon">🎨</span>
+          <div class="skill-name">UI/UX & Design</div>
+          <p style="font-size: 0.85rem; color: var(--muted); line-height: 1.6">
+            Designing beautiful, user-centered interfaces from wireframes to
+            polished prototypes.
+          </p>
+          <div class="skill-tags">
+            <span class="tag">Figma</span><span class="tag">Canva</span
+            ><span class="tag">Branding</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">⚡</span>
+          <div class="skill-name">WordPress & CMS</div>
+          <p style="font-size: 0.85rem; color: var(--muted); line-height: 1.6">
+            Full website creation and customization with WordPress, themes, and
+            plugins.
+          </p>
+          <div class="skill-tags">
+            <span class="tag">WordPress</span><span class="tag">CMS</span
+            ><span class="tag">Web Design</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">🤖</span>
+          <div class="skill-name">Computer Vision & AI</div>
+          <p style="font-size: 0.85rem; color: var(--muted); line-height: 1.6">
+            Python-based gesture control projects using OpenCV and MediaPipe.
+          </p>
+          <div class="skill-tags">
+            <span class="tag">OpenCV</span><span class="tag">MediaPipe</span
+            ><span class="tag">Python</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">🛒</span>
+          <div class="skill-name">Full-Stack Projects</div>
+          <p style="font-size: 0.85rem; color: var(--muted); line-height: 1.6">
+            End-to-end web application development — frontend to e-commerce.
+          </p>
+          <div class="skill-tags">
+            <span class="tag">MERN</span><span class="tag">E-Commerce</span
+            ><span class="tag">REST API</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="section-tag"><span class="num">03.</span> Work</div>
+      <h2 class="section-title">Projects & Builds</h2>
+      <div class="projects-grid">
+        <a
+          class="project-card"
+          href="https://matamandirstore.vercel.app/"
+          target="_blank"
+        >
+          <img
+            class="project-img"
+            src="https://i.postimg.cc/fLJ6bQdY/Screenshot-2026-04-13-174406.png"
+            alt="Mata Mandir Store"
+          />
+          <div class="project-body">
+            <div class="project-status status-live">● LIVE</div>
+            <div class="project-name">Mata Mandir Store 🛕</div>
+            <p class="project-desc">
+              Full e-commerce website for religious goods — product listings,
+              cart, and modern UI.
+            </p>
+          </div>
+          <div class="project-footer">
+            <span>HTML · CSS · JS</span><span class="project-arrow">→</span>
+          </div>
+        </a>
+
+        <a
+          class="project-card"
+          href="#"
+          target="_blank"
+          style="pointer-events: none; opacity: 0.7"
+        >
+          <img
+            class="project-img"
+            src="https://i.postimg.cc/6QYzQjJc/designarch.jpg"
+            alt="DesignArch"
+          />
+          <div class="project-body">
+            <div class="project-status status-wip">⏳ IN PROGRESS</div>
+            <div class="project-name">DesignArch 🏛️</div>
+            <p class="project-desc">
+              Architecture designing website — frontend complete, backend
+              integration underway.
+            </p>
+          </div>
+          <div class="project-footer">
+            <span>HTML · CSS · JS · Node</span
+            ><span class="project-arrow">⏳</span>
+          </div>
+        </a>
+
+        <a
+          class="project-card"
+          href="#"
+          target="_blank"
+          style="pointer-events: none; opacity: 0.7"
+        >
+          <img
+            class="project-img"
+            src="https://i.pinimg.com/736x/32/58/3b/32583bc980318d3ebd61c1249dfb5bef.jpg"
+            alt="JamAware"
+          />
+          <div class="project-body">
+            <div class="project-status status-wip">⏳ IN PROGRESS</div>
+            <div class="project-name">JamAware 🚦</div>
+            <p class="project-desc">
+              Real-time traffic jam & road condition monitoring — solving daily
+              commute pain.
+            </p>
+          </div>
+          <div class="project-footer">
+            <span>React · Maps API</span><span class="project-arrow">⏳</span>
+          </div>
+        </a>
+
+        <a
+          class="project-card"
+          href="https://snake-game-adhar-tyagi.vercel.app/"
+          target="_blank"
+        >
+          <img
+            class="project-img"
+            src="https://www.pygame.org/thumb/dc96bf1f0848cde4419b05beaccf5c97.jpg"
+            alt="Snake Game"
+          />
+          <div class="project-body">
+            <div class="project-status status-live">● LIVE</div>
+            <div class="project-name">Snake Game 🐍</div>
+            <p class="project-desc">
+              Classic snake game built with JavaScript — smooth animations &
+              keyboard controls.
+            </p>
+          </div>
+          <div class="project-footer">
+            <span>JavaScript · Canvas API</span
+            ><span class="project-arrow">→</span>
+          </div>
+        </a>
+
+        <a
+          class="project-card"
+          href="https://bucket-game-fallling-stars-adhar-tyagi.vercel.app/"
+          target="_blank"
+        >
+          <img
+            class="project-img"
+            src="https://i.postimg.cc/dQ9WC7Jx/Screenshot-2025-05-25-234747.png"
+            alt="Bucket Game"
+          />
+          <div class="project-body">
+            <div class="project-status status-live">● LIVE</div>
+            <div class="project-name">Bucket Falling Stars 🌟</div>
+            <p class="project-desc">
+              Catch falling stars with a bucket — fun browser game with
+              increasing difficulty.
+            </p>
+          </div>
+          <div class="project-footer">
+            <span>JavaScript · Canvas</span><span class="project-arrow">→</span>
+          </div>
+        </a>
+
+        <a
+          class="project-card"
+          href="https://github.com/ADHAR546/mouse-cursor-follow-finger-"
+          target="_blank"
+        >
+          <img
+            class="project-img"
+            src="https://i.postimg.cc/NjZCj1P1/Screenshot-2025-05-26-173735.png"
+            alt="Virtual Mouse"
+          />
+          <div class="project-body">
+            <div class="project-status status-live">● GITHUB</div>
+            <div class="project-name">Virtual Mouse 🖱️</div>
+            <p class="project-desc">
+              Control your PC mouse with hand gestures using Python, OpenCV &
+              MediaPipe.
+            </p>
+          </div>
+          <div class="project-footer">
+            <span>Python · OpenCV · MediaPipe</span
+            ><span class="project-arrow">→</span>
+          </div>
+        </a>
+
+        <a
+          class="project-card"
+          href="https://github.com/ADHAR546/volume-control-hand"
+          target="_blank"
+        >
+          <img
+            class="project-img"
+            src="https://i.postimg.cc/hj0t9RjX/Screenshot-2025-05-26-175806.png"
+            alt="Volume Control"
+          />
+          <div class="project-body">
+            <div class="project-status status-live">● GITHUB</div>
+            <div class="project-name">Hand Volume Control 🔊</div>
+            <p class="project-desc">
+              Adjust system volume with just your fingers — gesture-based
+              computer vision app.
+            </p>
+          </div>
+          <div class="project-footer">
+            <span>Python · OpenCV · MediaPipe</span
+            ><span class="project-arrow">→</span>
+          </div>
+        </a>
+
+        <a
+          class="project-card"
+          href="https://calculater-adhar-tyagi.vercel.app/"
+          target="_blank"
+        >
+          <img
+            class="project-img"
+            src="https://i.postimg.cc/0jfPR8Ry/calculatorlogo.jpg"
+            alt="Calculator"
+          />
+          <div class="project-body">
+            <div class="project-status status-live">● LIVE</div>
+            <div class="project-name">Calculator 🧮</div>
+            <p class="project-desc">
+              Sleek, functional calculator app with clean UI and smooth
+              interactions.
+            </p>
+          </div>
+          <div class="project-footer">
+            <span>HTML · CSS · JavaScript</span
+            ><span class="project-arrow">→</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certs">
+      <div class="section-tag"><span class="num">04.</span> Credentials</div>
+      <h2 class="section-title">Certifications</h2>
+      <div class="certs-list">
+        <div class="cert-item">
+          <div class="cert-dot"></div>
+          <div>
+            <div class="cert-org">LetsUpgrade</div>
+            <div class="cert-name">
+              Graphic Designing Bootcamp & Canva Bootcamp
+            </div>
+          </div>
+        </div>
+        <div class="cert-item">
+          <div class="cert-dot"></div>
+          <div>
+            <div class="cert-org">NPTEL</div>
+            <div class="cert-name">
+              Foundation of Cloud, IoT, Edge & Machine Learning
+            </div>
+          </div>
+        </div>
+        <div class="cert-item">
+          <div class="cert-dot"></div>
+          <div>
+            <div class="cert-org">JBIT</div>
+            <div class="cert-name">
+              Digital Marketing · Python Programming · Sensors Network & Cloud
+              IoT Workshop · Hackathon
+            </div>
+          </div>
+        </div>
+        <div class="cert-item">
+          <div class="cert-dot"></div>
+          <div>
+            <div class="cert-org">IITronixSolution</div>
+            <div class="cert-name">C++ · C · Artificial Intelligence</div>
+          </div>
+        </div>
+        <div class="cert-item">
+          <div class="cert-dot"></div>
+          <div>
+            <div class="cert-org">YHILLS</div>
+            <div class="cert-name">Web Development</div>
+          </div>
+        </div>
+        <div class="cert-item">
+          <div class="cert-dot"></div>
+          <div>
+            <div class="cert-org">IIT Bombay — Spoken Tutorial</div>
+            <div class="cert-name">Python 3.4.3 Training</div>
+          </div>
+        </div>
+        <div class="cert-item">
+          <div class="cert-dot"></div>
+          <div>
+            <div class="cert-org">Vervegen Tech Pvt Ltd</div>
+            <div class="cert-name">MERN Stack Development</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact-section">
+      <div class="section-tag"><span class="num">05.</span> Reach Out</div>
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p>
+            Open to internship opportunities, freelance projects, and
+            collaborations. I'd love to hear about what you're building.
+          </p>
+          <div class="contact-links">
+            <a class="contact-link" href="mailto:adhartyagi1234@gmail.com">
+              <span class="link-icon">✉️</span> adhartyagi1234@gmail.com
+            </a>
+            <a class="contact-link" href="tel:8171034485">
+              <span class="link-icon">📞</span> +91 8171034485
+            </a>
+            <a
+              class="contact-link"
+              href="https://wa.me/8171034485"
+              target="_blank"
+            >
+              <span class="link-icon">💬</span> WhatsApp
+            </a>
+            <a
+              class="contact-link"
+              href="https://www.linkedin.com/in/adhar-tyagi-2847b325b"
+              target="_blank"
+            >
+              <span class="link-icon">in</span> LinkedIn
+            </a>
+            <a
+              class="contact-link"
+              href="https://github.com/ADHAR546"
+              target="_blank"
+            >
+              <span class="link-icon">gh</span> GitHub — ADHAR546
+            </a>
+            <span class="contact-link" style="cursor: default">
+              <span class="link-icon">📍</span> Dehradun, Uttarakhand, India
+            </span>
+          </div>
+        </div>
+
+        <form class="contact-form" onsubmit="handleContact(event)">
+          <div class="form-field">
+            <label>Name</label>
+            <input type="text" id="cname" placeholder="Your name" required />
+          </div>
+          <div class="form-field">
+            <label>Email</label>
+            <input
+              type="email"
+              id="cemail"
+              placeholder="your@email.com"
+              required
+            />
+          </div>
+          <div class="form-field">
+            <label>Message</label>
+            <textarea
+              id="cmsg"
+              placeholder="What's on your mind?"
+              required
+            ></textarea>
+          </div>
+          <button
+            class="btn btn-primary"
+            type="submit"
+            style="cursor: none; align-self: flex-start"
+          >
+            🚀 Send Message
+          </button>
+          <p
+            id="form-success"
+            style="
+              color: var(--accent);
+              font-family: var(--mono);
+              font-size: 0.8rem;
+              display: none;
+            "
+          >
+            ✓ Message sent! I'll get back to you soon.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>&lt; <span>Adhar Tyagi</span> © 2026 · Frontend Developer /&gt;</p>
+      <p style="font-size: 0.7rem">Dehradun, India · Built with ❤️ & Code</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
