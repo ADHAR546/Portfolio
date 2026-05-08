@@ -1,43 +1,72 @@
-
-   document.addEventListener('DOMContentLoaded', function() {
-            const sections = document.querySelectorAll('.section');
-            const options = {
-                threshold: 0.1
-            };
-
-            const menuButton = document.getElementById('menu-button');
-  const mobileMenu = document.getElementById('mobile-menu');
-
-  menuButton.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
+// Custom cursor
+const cursor = document.getElementById("cursor");
+const ring = document.getElementById("cursorRing");
+let mx = 0,
+  my = 0,
+  rx = 0,
+  ry = 0;
+document.addEventListener("mousemove", (e) => {
+  mx = e.clientX;
+  my = e.clientY;
+  cursor.style.left = mx + "px";
+  cursor.style.top = my + "px";
+});
+function animRing() {
+  rx += (mx - rx) * 0.12;
+  ry += (my - ry) * 0.12;
+  ring.style.left = rx + "px";
+  ring.style.top = ry + "px";
+  requestAnimationFrame(animRing);
+}
+animRing();
+document
+  .querySelectorAll("a, button, .skill-card, .project-card")
+  .forEach((el) => {
+    el.addEventListener("mouseenter", () => {
+      cursor.style.width = "20px";
+      cursor.style.height = "20px";
+      ring.style.width = "56px";
+      ring.style.height = "56px";
+      ring.style.opacity = "1";
+    });
+    el.addEventListener("mouseleave", () => {
+      cursor.style.width = "10px";
+      cursor.style.height = "10px";
+      ring.style.width = "36px";
+      ring.style.height = "36px";
+      ring.style.opacity = "0.6";
+    });
   });
 
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('active');
-                    } else {
-                        entry.target.classList.remove('active');
-                    }
-                });
-            }, options);
+// Contact form mailto
+function handleContact(e) {
+  e.preventDefault();
+  const n = document.getElementById("cname").value;
+  const em = document.getElementById("cemail").value;
+  const msg = document.getElementById("cmsg").value;
+  window.open(
+    `mailto:adhartyagi1234@gmail.com?subject=Portfolio Contact from ${n}&body=${msg}%0A%0AFrom: ${em}`,
+  );
+  document.getElementById("form-success").style.display = "block";
+}
 
-            sections.forEach(section => {
-                observer.observe(section);
-            });
-
-            document.querySelectorAll('a.nav-link').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href').substring(1);
-                    const targetSection = document.getElementById(targetId);
-
-                    targetSection.scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                });
-            });
-        });
-  
-
-c
+// Scroll reveal
+const obs = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) {
+        e.target.style.opacity = "1";
+        e.target.style.transform = "translateY(0)";
+      }
+    });
+  },
+  { threshold: 0.1 },
+);
+document
+  .querySelectorAll(".skill-card, .project-card, .cert-item")
+  .forEach((el) => {
+    el.style.opacity = "0";
+    el.style.transform = "translateY(24px)";
+    el.style.transition = "opacity 0.5s ease, transform 0.5s ease";
+    obs.observe(el);
+  });
